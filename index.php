@@ -90,8 +90,7 @@
 
     //our dropzone options are here
     //this block uses some jquery to make sure we can only upload a single file at a time,
-    //to limit our filesize to 1GB (we must also edit the values for upload size and post size in our php.ini for this),
-    //to only begin upload if we click submit button
+    //to limit our filesize to 1GB (we must also edit the values for upload size and post size in our php.ini for this)
 
     var dropzone_reference;//we will assign a reference of our dropzone to this variable so that FileReader.js can add files when the user pastes and image
 
