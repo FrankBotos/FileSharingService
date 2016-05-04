@@ -1,0 +1,280 @@
+html {
+  background-color: #1F2232;
+  font-family: 'Oswald', sans-serif;
+
+  /*making our background image scale and fit entire page*/
+  background: url(images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+body {
+  /*making sure our content fills up entire page*/
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#header {
+
+  color: white;
+  text-shadow: 2px 2px 8px black;
+
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+
+  background-color: #262626;
+}
+
+.subheader {
+  font-size: 28px;
+  font-weight: 300;
+  padding-bottom: .5em;
+  color:gray;
+}
+
+.subheaderWhite {
+  font-size: 34px;
+  font-weight: 300;
+  padding-bottom: .5em;
+}
+
+#orange {
+  color: #FFCC66;
+}
+.orange {
+  color: #FFCC66;
+}
+
+.orangeLink:link {
+  color: #FFCC66;
+}
+.orangeLink:hover {
+  color: #FFCC66;
+}
+.orangeLink:visited{
+  color: #FFCC66;
+}
+
+.main {
+  padding: 15px;
+  font-size: 17px;
+  background-color: #262626;
+  background: url(images/opacitybg.png);
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 6px;
+
+}
+
+footer {
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+
+  background-color: black;
+
+}
+
+.highlight {
+  color: #1C6BA0;
+  font-weight: bold;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+#uploadBox {
+  border-style: dashed;
+  border-color: white;
+  border-width: 2px;
+  width: 50%;
+  margin: auto;
+  text-decoration: underline;
+  background-color: gray;
+}
+
+button.submitFile {
+  background-color: gray;
+  border: none;
+}
+
+#menu {
+  background-color: black;
+}
+
+table.menuFooter, td.menuFooter, tr.menuFooter {
+  margin: auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+  background: black;
+  text-shadow: 2px 2px 8px black;
+  padding: 0 82px;
+  margin-top: 10px;
+}
+
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: #FFCC66;
+}
+
+td.menuFooter:hover{
+  background-color: #262626;
+}
+
+#copyright {
+  padding-top: 10px;
+  color: gray;
+}
+
+.messageBox {
+  display:none;
+  border: solid 1px #FC6;
+  padding: 15px;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  background-color: #262626;
+  color: gray;
+  font-size: 17px;
+  font-weight: 300;
+  margin: auto;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+}
+
+.downArrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FC6;
+  margin: auto;
+}
+
+button.closeDialog {
+  background: url(images/opacitybg.png);
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  border-radius: 5px;
+}
+button#cancelUpload {
+  display: none;
+  background: url(images/opacitybg.png);
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  border-radius: 5px;
+}
+div.buttonCentered {
+  text-align:center;
+  margin:auto;
+}
+
+/*some css for dynamic tooltips*/
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #FC6; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 0.4s;
+    width: 300px;
+    background-color: #262626;
+    color: gray;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    padding: 5px 0;
+    border-color: #FC6;
+    border-radius: 6px;
+
+    /* Positioning tooltip above text*/
+    position: absolute;
+    width: 600px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -300px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #262626 transparent transparent transparent;
+}
+/*our tooltip css ends here*/
+
+
+
+
+
+/*CSS for video/audio playback*/
+video {
+  width: 90%;
+}
+img{
+  width: 90%;
+}
+
+
+
+/*css for footer*/
+a.footerLink:link, a.footerLink:visited {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 1px solid white;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+a.footerLink:hover {
+  background-color: #232323;
+}
+
+table.footerMenu {
+  margin: auto;
+}
+
+div.createSpace{
+  padding-left: 8px;/*THESE TWO VALUES SHOULD ALWAYS BE SLIGHTLY LARGER THAN THE PADDING VALUES FOR a.footerlink!!!!*/
+  padding-right: 8px;
+}
