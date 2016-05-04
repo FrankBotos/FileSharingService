@@ -2,7 +2,7 @@
 session_start();
 $uploadsdir = "da8b66caea1d897854d9e060e8167b26";
 
-  if(!empty($_FILES)) {//if the global files array is not EmptyIterator
+  if(!empty($_FILES)) {//if the global files array is not Empty
     $temp = $_FILES['file']['tmp_name']; // we store the file that is being uploaded in a temporary variable
     $dirsep = DIRECTORY_SEPARATOR;//creating a directory seperator (ie. representing forward slash)
     $folder = $uploadsdir;//name of folder we are uploading our files to
