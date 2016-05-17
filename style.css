@@ -1,3 +1,7 @@
+/*
+note for future reference: CSS FOR KEEPING OUR FOOTER AT THE BOTTOM OF PAGE GOTTEN FROM THIS LINK: https://codepen.io/cbracco/pen/zekgx
+*/
+
 html {
   background-color: #1F2232;
   font-family: 'Oswald', sans-serif;
@@ -9,16 +13,33 @@ html {
   -o-background-size: cover;
   background-size: cover;
 
+
+  height:100%;
+  box-sizing: border-box;
 }
 
 body {
   /*making sure our content fills up entire page*/
   margin: 0 !important;
   padding: 0 !important;
+
+  position: relative;
+  padding-bottom: 40px;
+  min-height: 100%;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#wrapper {
+
 }
 
 #header {
-
   color: white;
   text-shadow: 2px 2px 8px black;
 
@@ -27,6 +48,21 @@ body {
   font-weight: 700;
 
   background-color: #262626;
+}
+
+.footer {
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 40px;
+
 }
 
 .subheader {
@@ -78,22 +114,6 @@ body {
 
 }
 
-footer {
-  font-weight: 300;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 8px black;
-
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 75px;
-
-  background-color: black;
-
-}
-
 .highlight {
   color: #1C6BA0;
   font-weight: bold;
@@ -116,21 +136,6 @@ button.submitFile {
   border: none;
 }
 
-#menu {
-  background-color: black;
-}
-
-table.menuFooter, td.menuFooter, tr.menuFooter {
-  margin: auto;
-  border: 1px solid white;
-  border-collapse: collapse;
-  color: white;
-  background: black;
-  text-shadow: 2px 2px 8px black;
-  padding: 0 82px;
-  margin-top: 10px;
-}
-
 a:link{
   color: white;
   text-decoration: none;
@@ -146,11 +151,6 @@ a:hover{
 
 td.menuFooter:hover{
   background-color: #262626;
-}
-
-#copyright {
-  padding-top: 10px;
-  color: gray;
 }
 
 .messageBox {
@@ -257,24 +257,48 @@ img{
 
 
 /*css for footer*/
+#menu {
+  background-color: black;
+  font-weight: 300;
+}
 a.footerLink:link, a.footerLink:visited {
   display: block;
   width: 100%;
   height: 100%;
   margin: auto;
-  border: 1px solid white;
+  text-align: center;
   padding-left: 7px;
   padding-right: 7px;
+  border-bottom: solid 2px black;
 }
 a.footerLink:hover {
   background-color: #232323;
+  border-bottom: solid 2px #FC6;
 }
 
 table.footerMenu {
   margin: auto;
+  border-collapse: collapse;
 }
 
 div.createSpace{
   padding-left: 8px;/*THESE TWO VALUES SHOULD ALWAYS BE SLIGHTLY LARGER THAN THE PADDING VALUES FOR a.footerlink!!!!*/
   padding-right: 8px;
+}
+
+/*some css for our list of keys*/
+table.keysTable{
+  width: 100%;
+  border-bottom: dashed 1px;
+}
+td.keysTd{
+  text-align: left;
+  width: 50%;
+  padding-top: 10px;
+  border-top: dashed 1px;
+}
+img.keysImage{
+  width: 24px;/*these values should correlate to the actual dimensions of the image being used*/
+  height: 24px;
+  vertical-align: middle;/*making sure that our text is vertically aligned with the icon*/
 }

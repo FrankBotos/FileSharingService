@@ -1,33 +1,38 @@
 <?php
   function generateHeader(){
     $html = "
+    <div id='wrapper'>
         <div id=\"header\">
           <span id=\"orange\"><a href=\"index.php\" class=\"orangeLink\">ShareCubby</a></span>
             <div class=\"subheader\">
               One click media share! No account needed.
             </div>
         </div>
-    ";
-    echo $html;
-  }
 
-  function generateFooter(){
-    $html = "
-      <footer>
-
+        <div id='menu'>
         <table class='footerMenu'>
           <tr>
+            <td><div class='createSpace'><a href='index.php' class='footerLink'>Home</a></div></td>
+            <td><div class='createSpace'><a href='yourKeys.php' class='footerLink'>Your Keys</a></div></td>
             <td><div class='createSpace'><a href='#' id='about' class='footerLink'>About</a></div></td>
             <td><div class='createSpace'><a href='#' id='faq' class='footerLink'>FAQ</a></div></td>
             <td><div class='createSpace'><a href='#' id='contact' class='footerLink'>Contact</a></div></td>
             <td><div class='createSpace'><a href='#' id='tos' class='footerLink'>Terms of Service</a></div></td>
           </tr>
         </table>
-
-        <div id=\"copyright\">
-        Copyright © Frank Botos, 2016
         </div>
-      </footer>
+
+    ";
+    echo $html;
+  }
+
+  function generateFooter(){
+    $html = "
+    <br/><br/>
+      <div class = 'footer'>
+        Copyright © Frank Botos, 2016
+      </div>
+    </div>
     ";
     echo $html;
   }
@@ -77,7 +82,7 @@
       send me the link and I will delete the file immediately. If you have trouble getting in touch with me, don\'t worry! All files are deleted after a day anyhow in order to free up server space.<br/>
       <br/><div class="buttonCentered"><button class="closeDialog">Got it!</button></div>
     </div>
-    <br/>
+
     ';
 
     echo $html;

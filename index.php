@@ -188,10 +188,10 @@
 
   <?php generateHeader(); ?>
 
-  <br/>
 
   <?php generateMenuItems(); ?>
 
+  <br/>
   <div class="main">
 
     <div class="subheaderWhite">Here's how you do it!</div>

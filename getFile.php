@@ -191,6 +191,6 @@
 
   </body>
 
-<?php session_destroy(); ?>
+<?php //session_destroy(); ?>
 </body>
 </html>
